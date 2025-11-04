@@ -10,10 +10,10 @@ let currentFigure = '';
 
 // URLs de las imágenes de referencia
 const referenceImages = {
-  'cube': '/src/img/CUBO.png',
-  'pyramid_square': '/src/img/PiramideCuadrangular.png',
-  'pyramid_triangle': '/src/img/PiramideTriangular.png',
-  'rhombus': '/src/img/Rombo.png'
+  'cube': '/public/img/CUBO.png',
+  'pyramid_square': '/public/img/PiramideCuadrangular.png',
+  'pyramid_triangle': '/public/img/PiramideTriangular.png',
+  'rhombus': '/public/img/Rombo.png'
 };
 
 const vertexColors = [
