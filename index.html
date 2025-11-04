@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css"/>
+  <title>ScorpionThreeJS</title>
+</head>
+<body>
+<div id="form-container">
+    <div class="team-card">
+      <h2>Proyecto de Graficación 3D</h2>
+      <div class="team-members">
+        <h3>Alumnos:</h3>
+        <ul>
+          <li>Fuster Barba Miguel Axel</li>
+          <li><span class="rainbow-name">García Micette Leonardo Geralt</span></li>
+          <li>Torres Mora Alan Giovanni</li>
+        </ul>
+      </div>
+      <div class="team-info">
+        <div>
+          <strong>Profesor:</strong>
+          <span>Hernández Cervantes Liliana</span>
+        </div>
+        <div>
+          <strong>Grupo:</strong>
+          <span>1059</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="main-title">Graficador 3D</h2>
+    
+    <!-- Formulario inicial -->
+    <form id="coords-form">
+      <label for="figure">Selecciona una figura:</label>
+      <select id="figure" name="figure" required>
+        <option value="">--Seleccione--</option>
+        <option value="cube">Cubo</option>
+        <option value="pyramid_triangle">Pirámide triangular</option>
+        <option value="pyramid_square">Pirámide cuadrangular</option>
+        <option value="rhombus">Rombo</option>
+      </select>
+
+      <!-- Contenedor para la imagen de referencia -->
+      <div id="reference-image-container">
+        <p>Referencia visual:</p>
+        <img id="reference-image" src="" alt="Referencia de figura">
+      </div>
+
+      <div id="inputs"></div>
+      <button type="submit">Graficar</button>
+    </form>
+
+    <!-- Sección de transformaciones -->
+    <div id="transform-section">
+      <h3>Transformaciones</h3>
+      
+      <label for="operation">Selecciona una operación:</label>
+      <select id="operation" name="operation">
+        <option value="">--Seleccione--</option>
+        <option value="translation">Traslación</option>
+        <option value="scaling">Escalamiento</option>
+        <option value="rotation">Rotación</option>
+      </select>
+
+      <div id="transform-inputs"></div>
+
+      <button type="button" id="apply-transform" disabled>Aplicar Transformación</button>
+      <button type="button" id="reset-figure" class="reset-btn">Reiniciar Figura</button>
+    </div>
+  </div>
+  
+  <div id="scene-container"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
